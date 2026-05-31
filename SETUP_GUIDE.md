@@ -18,14 +18,14 @@
 2. **创建新仓库**
    - 点击右上角的 **+** 图标
    - 选择 **New repository**
-   
+
 3. **填写仓库信息**
    - **Repository name**: `MindForge`
-   - **Description**: `🤖 MindForge - AI增强型个人知识管理系统 | 本地优先 · 知识图谱 · 智能协作`
+   - **Description**: `🤖 MindForge - AI增强型个人知识归档仓库 | 本地优先 · 智能整理 · 安全存储`
    - **Visibility**: Public（公开）或 Private（私有）
    - ⚠️ **不要勾选** "Add a README file"（因为我们已经有了）
    - ⚠️ **不要勾选** "Add .gitignore"（因为我们已经有了）
-   
+
 4. **创建仓库**
    点击 **Create repository**
 
@@ -34,10 +34,10 @@
 
    ```bash
    cd /Users/guanxianxiao/Documents/code/work/ai_workspace/Trae_workspace/MindForge
-   
+
    # 添加远程仓库（将 YOUR_USERNAME 替换为你的 GitHub 用户名）
    git remote add origin https://github.com/YOUR_USERNAME/MindForge.git
-   
+
    # 推送代码到 GitHub
    git push -u origin master
    ```
@@ -87,7 +87,6 @@ gh repo create MindForge --public --source=. --push
 
 - 🛠️ 开始编写代码
 - 📝 完善项目文档
-- 🤝 邀请协作者
 - 🐛 创建 Issue 追踪任务
 
 ---

@@ -1,42 +1,46 @@
 # Contributing to MindForge
 
-Thank you for your interest in contributing to MindForge!
+感谢您对 MindForge 的关注！
 
-## How to Contribute
+## 关于 MindForge
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+MindForge 是一款专为**个人用户**打造的知识归档工具，帮助用户收集、整理、存储和归档各类个人知识。不同于面向团队的知识管理系统，MindForge 专注于服务个人用户，提供本地优先的私密存储体验。
 
-## Development Setup
+## 如何贡献
+
+1. Fork 这个仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 创建 Pull Request
+
+## 开发环境设置
 
 ```bash
-# Clone your fork
+# 克隆你的 Fork
 git clone https://github.com/YOUR_USERNAME/MindForge.git
 
-# Install dependencies
+# 安装依赖
 npm install
 
-# Start development server
+# 启动开发服务器
 npm run dev
 ```
 
-## Code Style
+## 代码规范
 
-- Follow the existing code style
-- Use meaningful variable names
-- Add comments for complex logic
-- Write tests for new features
+- 遵循现有的代码风格
+- 使用有意义的变量名
+- 为复杂逻辑添加注释
+- 为新功能编写测试
 
-## Pull Request Guidelines
+## Pull Request 指南
 
-- Keep PRs focused and atomic
-- Include tests if applicable
-- Update documentation as needed
-- Follow the commit message format
+- 保持 PR 聚焦和原子化
+- 包含测试（如适用）
+- 按需更新文档
+- 遵循提交信息格式
 
-## License
+## 许可证
 
-By contributing, you agree that your contributions will be licensed under the MIT License.
+贡献即表示您同意您的贡献将使用 MIT 许可证授权。
