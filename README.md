@@ -1,112 +1,48 @@
-# 🔥 MindForge
+# 📚 文档索引
 
-> 🤖 AI增强型个人知识归档仓库 | 本地优先 · 智能整理 · 安全存储
+## 鸿蒙应用端侧架构文档库
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+&gt; 系统化分析鸿蒙应用架构设计、架构演进和最佳实践
 
-## 🌟 项目简介
+### 1️⃣ **架构演进分析**
+| 文档 | 分类 | 关键词 | 摘要 |
+|-----|------|-------|-----|
+| [鸿蒙应用端侧架构演进分析](docs/architecture/鸿蒙应用端侧架构演进分析.md) | 架构演进 | 三层架构, Ability, ArkUI, 分布式, 方舟编译 | 系统性推演从传统三层架构到极致优化的完整演进路径 |
 
-MindForge 是一款专为**个人用户**打造的知识归档工具，帮助您收集、整理、存储和归档各类个人知识。不同于面向团队的知识管理系统，MindForge 专注于服务个人用户，提供本地优先的私密存储体验和 AI 驱动的智能整理能力。
+### 2️⃣ **三层架构设计**
+| 文档 | 分类 | 关键词 | 摘要 |
+|-----|------|-------|-----|
+| [鸿蒙三层架构深度分析](docs/feature/鸿蒙三层架构CommonFeatureProduct分析.md) | Feature架构 | Common层, Feature层, Product层, 膨胀问题, 交叉依赖 | Common/Feature/Product三层架构的设计、优化和最佳实践 |
+| [HAP/HAR/HSP方案分析](docs/comparison/鸿蒙三层架构HAP_HAR_HSP方案分析.md) | 包类型方案 | HSP, HAR, HAP, 包类型选择 | 详细分析三种包类型在三层架构中的应用和优化方案 |
 
-## 🌟 核心特性
+### 3️⃣ **Feature模块设计**
+| 文档 | 分类 | 关键词 | 摘要 |
+|-----|------|-------|-----|
+| [Feature间View组件依赖问题深度剖析](docs/feature/dependency/Feature间View组件依赖问题深度剖析.md) | Feature解耦 | 组件依赖, 组合插槽, 数据驱动, 路由跳转 | Feature间View组件交叉依赖的深度分析和解决方案 |
 
-### 1. 本地优先，隐私安全
-- 所有数据存储在本地，完全掌控自己的知识资产
-- 支持离线使用，随时随地访问您的个人知识库
-- 无需担心云端泄露风险，隐私数据不离开您的设备
-
-### 2. AI智能整理
-- **自动分类**：AI 智能识别内容，自动归档到合适的位置
-- **智能标签**：自动生成标签，让知识更有条理
-- **摘要提炼**：自动提炼关键信息，快速把握内容要点
-- **去重整合**：智能检测重复内容，优化存储空间
-
-### 3. AI辅助检索
-- **对话检索**：用自然语言与您的知识库对话，快速找到所需内容
-- **语义搜索**：理解您的搜索意图，不只是关键词匹配
-- **智能推荐**：基于您的知识图谱，智能推荐相关内容
-
-### 4. 知识归档整理
-- **多种格式支持**：支持文本、图片、网页、文档等多种格式的归档
-- **文件夹管理**：清晰的文件夹结构，让知识归类有序
-- **时间线归档**：按时间轴整理，记录知识沉淀的轨迹
-- **标签系统**：灵活的标签系统，从多维度组织知识
-
-### 5. 个人知识图谱
-- 自动构建个人知识之间的关联网络
-- 可视化呈现知识脉络
-- 智能发现隐藏的知识联系
-
-## 🎯 与知识管理系统的区别
-
-| 特性 | MindForge（个人归档仓库） | 传统知识管理系统 |
-|-----|------------------------|----------------|
-| **目标用户** | 个人用户 | 团队/企业 |
-| **数据存储** | 本地优先 | 云端为主 |
-| **协作功能** | 无，专注个人 | 强协作 |
-| **隐私保护** | 极强，数据不离设备 | 依赖服务商 |
-| **使用场景** | 个人知识沉淀、归档、整理 | 团队知识共享 |
-
-## 🚀 快速开始
-
-### 安装依赖
-```bash
-# 克隆项目
-git clone https://github.com/YOUR_USERNAME/MindForge.git
-
-# 进入目录
-cd MindForge
-
-# 安装依赖
-npm install
+### 📂 文档目录结构
+```
+docs/
+├── architecture/          # 架构演进分析
+│   └── 鸿蒙应用端侧架构演进分析.md
+├── feature/               # Feature模块设计
+│   ├── 鸿蒙三层架构CommonFeatureProduct分析.md
+│   └── dependency/        # Feature依赖问题
+│       └── Feature间View组件依赖问题深度剖析.md
+├── comparison/            # 方案对比
+│   └── 鸿蒙三层架构HAP_HAR_HSP方案分析.md
+└── DOCS_META.md           # 文档元数据
 ```
 
-### 启动开发服务器
-```bash
-npm run dev
-```
+### 🔍 关键词快速查找
+- **三层架构** → [鸿蒙三层架构深度分析](docs/feature/鸿蒙三层架构CommonFeatureProduct分析.md)
+- **Common膨胀** → [鸿蒙三层架构深度分析](docs/feature/鸿蒙三层架构CommonFeatureProduct分析.md)
+- **组件依赖** → [Feature间View组件依赖问题深度剖析](docs/feature/dependency/Feature间View组件依赖问题深度剖析.md)
+- **HAP/HAR/HSP** → [HAP/HAR/HSP方案分析](docs/comparison/鸿蒙三层架构HAP_HAR_HSP方案分析.md)
+- **架构演进** → [鸿蒙应用端侧架构演进分析](docs/architecture/鸿蒙应用端侧架构演进分析.md)
 
-## 📁 项目结构
-
-```
-MindForge/
-├── src/
-│   ├── components/     # UI组件
-│   ├── pages/          # 页面
-│   ├── services/       # AI服务
-│   ├── stores/         # 状态管理
-│   └── utils/          # 工具函数
-├── docs/               # 文档
-├── public/             # 静态资源
-└── package.json
-```
-
-## 🛠️ 技术栈
-
-- **前端框架**：React / Vue / ArkUI
-- **状态管理**：Zustand / Pinia
-- **AI服务**：OpenAI / Claude / 本地模型
-- **数据存储**：SQLite / IndexedDB（本地存储）
-- **知识图谱**：内存图数据库
-
-## 🎯 设计理念
-
-1. **个人隐私优先**：您的知识只属于您，数据始终存储在本地
-2. **AI增强但不依赖**：AI 提供智能辅助，但核心数据完全可控
-3. **归档而非协作**：专注于个人知识的沉淀和整理，而非团队协作
-4. **简单易用**：直观的界面，让知识归档变得轻松简单
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解更多详情。
-
----
-
-💡 **Slogan**: "锻造你的思想，连接你的知识"
-
-🌐 **项目主页**: https://github.com/YOUR_USERNAME/MindForge
+### 📖 阅读顺序建议
+1. **入门**：从架构演进开始 → [鸿蒙应用端侧架构演进分析](docs/architecture/鸿蒙应用端侧架构演进分析.md)
+2. **深入**：接着阅读三层架构设计 → [鸿蒙三层架构深度分析](docs/feature/鸿蒙三层架构CommonFeatureProduct分析.md)
+3. **方案选择**：再看包类型对比 → [HAP/HAR/HSP方案分析](docs/comparison/鸿蒙三层架构HAP_HAR_HSP方案分析.md)
+4. **问题解决**：遇到组件依赖问题 → [Feature间View组件依赖问题深度剖析](docs/feature/dependency/Feature间View组件依赖问题深度剖析.md)
